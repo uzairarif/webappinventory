@@ -5,7 +5,7 @@ function OpenCon()
  {
  $dbhost = "localhost";
  $dbuser = "root";
- $dbpass = "hello";
+ $dbpass = "";
  $db = "DATABASE_13151";
  
  
