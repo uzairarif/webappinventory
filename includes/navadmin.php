@@ -2,7 +2,8 @@
 <li><a href="/db-13151/customer/customer_list.php">Customers</a></li>
 <li><a href="/db-13151/salesperson/salesperson_list.php">SalesPersons</a></li>
 <li><a href="/db-13151/product/product_list.php">Products</a></li>
-<li><a href="/db-13151/sales/salesorders_list.php">Sales</a></li>
+<li><a href="/db-13151/sales/salesorders_list.php">Sales Order</a></li>
+<li><a href="/db-13151/salesreturn/salesreturn_list.php">Sales Return</a></li>
 <li><a href="#">About us</a></li>
 <li class="dropdown">
 	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us

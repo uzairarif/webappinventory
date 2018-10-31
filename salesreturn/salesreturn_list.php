@@ -26,11 +26,11 @@ $user = $_SESSION["user"];
 
 
 <div class = "container">
-	<h2>Sales Orders List</h2> <a href="selectsalescustomer.php" class="btn btn-info" role="button">New Order</a>
+	<h2>Sales Return List</h2> <a href="selectreturncustomer.php" class="btn btn-info" role="button">New Return Order</a>
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th>Order No</th>
+				<th>Return Order No</th>
 				<th>Customer Id</th>
 				<th>Date Time</th>
 				<th>Sales Person ID</th>
@@ -41,18 +41,18 @@ $user = $_SESSION["user"];
 		<?php 
 			include '/opt/lampp/htdocs/db-13151/db_connection.php';
     		$conn = OpenCon();    
-    		$sql = "SELECT * FROM salesorder_13151";  
+    		$sql = "SELECT * FROM salesreturn_13151";  
         $result = mysqli_query($conn, $sql);
 
     	while($row = mysqli_fetch_array($result)) {
         	echo 
 		 	"<tr>
-        		<td>" . $row['order_num'] . "</td>
+        		<td>" . $row['return_num'] . "</td>
         		<td>" . $row['customer_id'] . "</td>
         		<td>" . $row['date_time'] . "</td>
         		<td>" . $row['salesperson_id'] . "</td>
         		<td>" . $row['billed_amount'] . "</td>
-      			<td><a href='salesorderdetails.php?ordernum=$row[order_num]' class='btn btn-primary' role='button'>View Details</a>
+      			<td><a href='salesreturndetails.php?returnnum=$row[return_num]' class='btn btn-primary' role='button'>View Details</a>
       			</td>
       		</tr>";
    			}

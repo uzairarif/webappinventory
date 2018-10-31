@@ -47,7 +47,7 @@ $user = $_SESSION["user"];
             <td>" . $row['SalesPrice'] . "</td>
             <td><a href='product_retrieve.php?search=$row[ProductCode]' class='btn btn-primary' role='button'>edit</a>
             <span>/</span>
-              <a href='remove.php?delete=$row[ProductCode]' class = 'btn btn-danger btn-sm'>
+              <a href='productremove.php?delete=$row[ProductCode]' class = 'btn btn-danger btn-sm'>
               <span class = 'glyphicon glyphicon-trash'></span>
               delete</a></td>
           </tr>";

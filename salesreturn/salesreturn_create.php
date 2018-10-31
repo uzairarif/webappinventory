@@ -59,7 +59,7 @@ $count = 1;
                   }
                 }
 
-      $result4 = mysqli_query($conn, "SELECT * FROM salesorder_13151 ORDER BY order_num DESC LIMIT 1");
+      $result4 = mysqli_query($conn, "SELECT * FROM salesreturn_13151 ORDER BY return_num DESC LIMIT 1");
       $row4 = mysqli_fetch_array($result4);
 
 ?>
@@ -104,10 +104,10 @@ $count = 1;
 
   
   <!-- Order details -->
-<?php include('/opt/lampp/htdocs/db-13151/sales/salesordertable.php')?>
+<?php include('/opt/lampp/htdocs/db-13151/salesreturn/salesreturntable.php')?>
 
 
-<?php include('/opt/lampp/htdocs/db-13151/sales/salesmanipulate.php')?>
+<?php include('/opt/lampp/htdocs/db-13151/salesreturn/salesmanipulate.php')?>
 
 
 
