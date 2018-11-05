@@ -1,6 +1,13 @@
 <?php
 	session_start(); 
-$user = $_SESSION["user"];		
+
+if ($_SESSION["user"]) {
+ 	$user = $_SESSION["user"];	 	
+}
+else {
+	header("refresh:0; url=index.php");
+}
+
 ?>
 
 <!DOCTYPE html>

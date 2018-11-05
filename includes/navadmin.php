@@ -4,12 +4,14 @@
 <li><a href="/db-13151/product/product_list.php">Products</a></li>
 <li><a href="/db-13151/sales/salesorders_list.php">Sales Order</a></li>
 <li><a href="/db-13151/salesreturn/salesreturn_list.php">Sales Return</a></li>
+<li><a href="/db-13151/newuser.php">New User</a></li>
 <li><a href="#">About us</a></li>
 <li class="dropdown">
 	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
 	<span class="caret"></span></a>
 	<ul class="dropdown-menu">
 	<li><a href="#">Email/Phone Number</a></li>
-	<li><a href="#">Office Visit</a></li></ul>
+	<li><a href="#">Office Visit</a></li>
+	</ul>
 
 
