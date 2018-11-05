@@ -11,6 +11,13 @@ $user = $_SESSION["user"];
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <?php include('/opt/lampp/htdocs/db-13151/includes/header.php')?>
+<?php 
+  include '/opt/lampp/htdocs/db-13151/db_connection.php';
+  $conn = OpenCon();
+  $result = mysqli_query($conn, "SELECT * FROM user_13151 ORDER BY UID DESC LIMIT 1");
+  $row = mysqli_fetch_array($result);
+ ?>
+
 
 <div class="container">
     <div class="row">
@@ -18,7 +25,12 @@ $user = $_SESSION["user"];
         <h2>New Sales Person</h2>
           <form action="insert.php" method="post" class="form-vertical">
              <br>
-
+            
+            <div class="form-group">
+                <label for="new_user_id" class="col-sm-2  control-label">User ID</label>
+                <input type="text" name="new_user_id" value="<?php echo $row[0]+1; ?>" readonly/>
+            </div>
+            
             <div class="form-group">
                 <label for="name" class="col-sm-2  control-label">Name</label>
                 <input type="text" name="name"/>
