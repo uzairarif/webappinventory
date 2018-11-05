@@ -21,32 +21,32 @@ $user = $_SESSION["user"];
 
             <div class="form-group">
                 <label for="ProductCode" class="col-sm-2  control-label">Product Code</label>
-                <input type="text" name="ProductCode"/>
+                <input type="text" name="ProductCode" required/>
             </div>
 
             <div class="form-group">
                 <label for="Brand" class="col-sm-2 control-label">Brand</label>
-                <input type="text" name="Brand"/>
+                <input type="text" name="Brand" required/>
             </div>
 
             <div class="form-group">
                 <label for="Type" class="col-sm-2 control-label">Type</label>
-                <input type="text" name="Type"/>
+                <input type="text" name="Type" required/>
             </div>
 
             <div class="form-group">
                 <label for="Shade" class="col-sm-2 control-label">Shade</label>
-                <input type="text" name="Shade"/>
+                <input type="text" name="Shade" required/>
             </div>
 
             <div class="form-group">
                 <label for="Size" class="col-sm-2 control-label">Size</label>
-                <input type="text" name="Size"/>
+                <input type="text" name="Size" required/>
             </div>
 
             <div class="form-group">
                 <label for="SalesPrice" class="col-sm-2 control-label">Sales Price</label>
-                <input type="text" name="SalesPrice"/>
+                <input type="text" name="SalesPrice" required/>
             </div>
 
            

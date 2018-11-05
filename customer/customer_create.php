@@ -28,32 +28,32 @@ $user = $_SESSION["user"];
 
             <div class="form-group">
                 <label for="shop_name" class="col-sm-2  control-label">Shop Name</label>
-                <input type="text" name="shop_name"/>
+                <input type="text" name="shop_name" required/>
             </div>
 
             <div class="form-group">
                 <label for="customer_name" class="col-sm-2 control-label">Customer Name</label>
-                <input type="text" name="customer_name"/>
+                <input type="text" name="customer_name" required/>
             </div>
 
             <div class="form-group">
                 <label for="customer_num" class="col-sm-2 control-label">Customer Number</label>
-                <input type="text" name="customer_num"/>
+                <input type="text" name="customer_num" required/>
             </div>
 
             <div class="form-group">
                 <label for="Address" class="col-sm-2 control-label">Address</label>
-                <input type="text" name="address"/>
+                <input type="text" name="address" required/>
             </div>
 
             <div class="form-group">
                 <label for="Area" class="col-sm-2 control-label">Area</label>
-                <input type="text" name="area"/>
+                <input type="text" name="area"required/>
             </div>
 
             <div class="form-group">
                 <label for="Geo_Cord" class="col-sm-2 control-label">Geo-Cord</label>
-                <input type="text" name="Geo_Cord"/>
+                <input type="text" name="Geo_Cord"required/>
             </div>
 
             <div class="form-group">
@@ -64,12 +64,14 @@ $user = $_SESSION["user"];
                   />
             </div>
 
-           
             <input type="submit" name="submit" value="submit" />
 
 
 
           </form>
+
+            <p>Note: If a sales person is not decided please input 0 in the salesperson input field</p>
+           
       </div>
 
     </div>
