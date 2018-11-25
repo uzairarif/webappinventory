@@ -15,7 +15,9 @@
 
 
     if(mysqli_query($con,$sql)) {
-      
+      echo "<script>";
+      echo "alert('Salesperson Added');";
+      echo "</script>";
     }
     else echo "not added";
 

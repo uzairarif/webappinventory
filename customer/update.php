@@ -16,10 +16,12 @@
 	$sql = "UPDATE customer_13151 SET Shop_Name = '$nshopname', Customer_Name = '$ncustomername', Customer_Number = '$ncustomernum' , Address = '$naddress', Area = '$narea', Geo_Cord = '$nGeocord' WHERE CID = '$CID'";
  
 	if(mysqli_query($con,$sql)) {
-        echo 'Updated!';
+        echo "<script>";
+        echo "alert('Updated');";
+        echo "</script>";
         CloseCon($con);
     }
-    else echo "not added";
+    else echo "not updated";
 
 
 

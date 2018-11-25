@@ -4,6 +4,7 @@
 <li><a href="/db-13151/product/product_list.php">Products</a></li>
 <li><a href="/db-13151/sales/salesorders_list.php">Sales Order</a></li>
 <li><a href="/db-13151/salesreturn/salesreturn_list.php">Sales Return</a></li>
+<li><a href="/db-13151/FieldSurvey/survey.php">Field Survey</a></li>
 <li><a href="/db-13151/newuser.php">New User</a></li>
 <li><a href="#">About us</a></li>
 <li class="dropdown">

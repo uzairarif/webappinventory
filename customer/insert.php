@@ -28,15 +28,13 @@ $user = $_SESSION["user"];
 
 
 	   if(mysqli_query($con,$sql)) {
-        echo 'Added!';
+        echo "<script>";
+        echo "alert('Customer Added');";
+        echo "</script>";
         CloseCon($con);
            header("refresh:0; url=customer_list.php");
             }
     else echo "not added";
-
-    echo $sp;
-
-    echo $sql;
 
     
 
