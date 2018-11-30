@@ -27,10 +27,8 @@ $user = $_SESSION["user"];
 
     if(isset($_GET['ordernum'])) {
         $ordernum = $_GET['ordernum'];
-        $result = mysqli_query($conn, "SELECT * FROM salesorder_details13151 WHERE order_num = '$ordernum'");
-        $result2 = mysqli_query($conn, "SELECT billed_amount FROM salesorder_13151 WHERE order_num = '$ordernum'");
+        $result = mysqli_query($conn, "SELECT * FROM salesorder2_details13151 WHERE order_num = '$ordernum'");
 
-        $row2 = mysqli_fetch_array($result2);
     }
 
     CloseCon($conn);
@@ -51,18 +49,19 @@ $user = $_SESSION["user"];
 		</thead>
 		<tbody>
 		<?php 
-
+        $Total = 0;
     	while($row = mysqli_fetch_array($result)) {
         	echo 
 		 	"<tr>
         		<td class='pt-3-half text-center col-sm-1'>" . $row['product_id'] . "</td>
-        		<td class='pt-3-half text-center col-sm-1'>" . $row['quantity'] . "</td>
+        		<td class='pt-3-half text-center col-sm-1'>" . $row['qty'] . "</td>
         		<td class='pt-3-half text-center col-sm-1'>" . $row['rate'] . "</td>
         		<td class='pt-3-half text-center col-sm-1'>" . $row['amount'] . "</td>
-      </tr>";
+            </tr>";
+            $Total = $Total + $row['amount'];
    			}
 		 ?>
-      <td>Billed Amount = <?php echo $row2[0]; ?></td>
+      <td>Billed Amount = <?php echo $Total; ?></td>
 		</tbody>
 	</table>
 </div>

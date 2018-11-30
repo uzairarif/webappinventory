@@ -5,7 +5,7 @@
       <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i class="fa fa-plus fa-2x"
             aria-hidden="true"></i></a></span>
       <table class="table table-bordered table-responsive-md table-striped text-center" id="dynamic_field">
-        <tr>
+        <tr> 
           <th class="text-center col-sm-1">Product ID</th>
           <th class="text-center">Brand</th>
           <th class="text-center">Type</th>
@@ -34,13 +34,6 @@
           <td class="pt-3-half">
             <select name="Type" id="Type1"> 
             <option value="">Type</option>
-            <?php  
-                
-              for ($i=0; $i < sizeof($typedatas) ; $i++) { 
-                 echo '<option>'.$typedatas[$i].'</option>';
-               } 
-
-              ?>
             </select>
           </td>
           <td class="pt-3-half">

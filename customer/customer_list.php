@@ -36,7 +36,7 @@ $user = $_SESSION["user"];
 				<th>Customer Number</th>
 				<th>Address</th>
 				<th>Area</th>
-				<th>Geo-Cord</th>
+				<th>Country</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -62,7 +62,7 @@ $user = $_SESSION["user"];
         		<td>" . $row['Customer_Number'] . "</td>
         		<td>" . $row['Address'] . "</td>
       			<td>" . $row['Area'] . "</td>
-      			<td>" . $row['Geo_Cord'] . "</td>
+      			<td>" . $row['Country'] . "</td>
       			<td><a href='customer_retrieve.php?search=$row[CID]' class='btn btn-primary' role='button'>edit</a>
       			<span>/</span>
             	<a href='remove.php?delete=$row[CID]' class = 'btn btn-danger btn-sm'>

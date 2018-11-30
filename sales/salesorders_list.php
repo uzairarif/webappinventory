@@ -32,16 +32,14 @@ $user = $_SESSION["user"];
 			<tr>
 				<th>Order No</th>
 				<th>Customer Id</th>
-				<th>Date Time</th>
-				<th>Sales Person ID</th>
-				<th>Billed Amount</th>
+				<th>Date</th>
 			</tr>
 		</thead>
 		<tbody>
 		<?php 
 			include '/opt/lampp/htdocs/db-13151/db_connection.php';
     		$conn = OpenCon();    
-    		$sql = "SELECT * FROM salesorder_13151";  
+    		$sql = "SELECT * FROM salesorder2_13151";  
         $result = mysqli_query($conn, $sql);
 
     	while($row = mysqli_fetch_array($result)) {
@@ -49,9 +47,7 @@ $user = $_SESSION["user"];
 		 	"<tr>
         		<td>" . $row['order_num'] . "</td>
         		<td>" . $row['customer_id'] . "</td>
-        		<td>" . $row['date_time'] . "</td>
-        		<td>" . $row['salesperson_id'] . "</td>
-        		<td>" . $row['billed_amount'] . "</td>
+        		<td>" . $row['date'] . "</td>
       			<td><a href='salesorderdetails.php?ordernum=$row[order_num]' class='btn btn-primary' role='button'>View Details</a>
       			</td>
       		</tr>";

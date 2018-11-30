@@ -14,8 +14,8 @@
 
 		if(isset($_POST["js_size"]) && !empty($_POST["js_size"])){
 
-
-    	$query2 = $conn->query("SELECT ProductCode FROM product_13151 WHERE Brand='$brand' AND Type ='$type' AND Shade='$shade' AND Size='$size'");
+        
+        $query2 = $conn->query("SELECT ProductCode FROM product_13151 WHERE Brand='$brand' AND Type ='$type' AND Shade='$shade' AND Size='$size'");
     	$rowCount = $query2->num_rows;
 
     	if($rowCount == 1){
@@ -24,7 +24,7 @@
                     exit ($row['ProductCode']);
                }
     	}else{
-    		echo 'PRICE N/A';
+    		echo 'Product Code N/A';
                 }
 		}
 

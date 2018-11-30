@@ -10,8 +10,8 @@ $user = $_SESSION["user"];
 
     $dict = $_POST["dictionary"];
 
-    $cid = $dict["CID"];
-    $items = $dict["items"];  
+    $cid = $dict['CID'];
+    $items = $dict['items'];  
     $billedamount = 0;
 
     for ($i=1; $i <= $items ; $i++) { 
@@ -23,8 +23,8 @@ $user = $_SESSION["user"];
       (customer_id, date_time, salesperson_id, billed_amount) VALUES ('$cid','$today',1,'$billedamount')";
 
     if(mysqli_query($con,$sql1)) {
-        
-      }
+   
+     }
     else {
         header("refresh:0; url=db-13151/check.php");
       }

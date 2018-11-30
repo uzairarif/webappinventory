@@ -19,12 +19,12 @@ $user = $_SESSION["user"];
   	$customernum = $_POST['customer_num'];
   	$address = $_POST['address'];
   	$area = $_POST['area'];
-  	$Geocord = $_POST['Geo_Cord'];
+  	$Geocord = $_POST['Country'];
     $sp = $_POST['SP'];
 	  
 
     
-      $sql = "INSERT INTO customer_13151 (Shop_Name, Customer_Name, Customer_Number, Address, Area, Geo_Cord, Salesperson_id) VALUES ('$shopname', '$customername', '$customernum','$address','$area','$Geocord','$sp')";
+      $sql = "INSERT INTO customer_13151 (Shop_Name, Customer_Name, Customer_Number, Address, Area, Salesperson_id) VALUES ('$shopname', '$customername', '$customernum','$address','$area','$sp')";
 
 
 	   if(mysqli_query($con,$sql)) {

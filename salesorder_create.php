@@ -48,7 +48,7 @@ $count = 1;
                   }
                 }
 
-      $result4 = mysqli_query($conn, "SELECT order_num FROM salesorder2_13151 ORDER BY order_num DESC LIMIT 1");
+      $result4 = mysqli_query($conn, "SELECT * FROM salesorder2_13151 ORDER BY order_num DESC LIMIT 1");
       $row4 = mysqli_fetch_array($result4);
 
 ?>

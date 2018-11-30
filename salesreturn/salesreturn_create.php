@@ -25,7 +25,7 @@ $count = 1;
     }
 
       $i = 0;
-        $query=$conn -> query('select distinct Brand from product_13151');
+        $query=$conn -> query('select distinct Brand from product_13151 ORDER BY Brand');
         $rowCount=$query->num_rows;
         $branddatas = array();
         if($rowCount > 0){
@@ -35,17 +35,6 @@ $count = 1;
                 }
               }
 
-        $query2=$conn -> query('select distinct Type from product_13151');
-        $rowCount2=$query2->num_rows;
-        
-        $typedatas = array();
-        if($rowCount2 > 0){
-                  while($row=$query2->fetch_assoc()){
-                    $typedatas[] = $row['Type'];
-                    
-                  }
-
-                }
 
        // echo "<script type='text/javascript'>alert('$message');</script>";
 
@@ -59,14 +48,14 @@ $count = 1;
                   }
                 }
 
-      $result4 = mysqli_query($conn, "SELECT * FROM salesreturn_13151 ORDER BY return_num DESC LIMIT 1");
+      $result4 = mysqli_query($conn, "SELECT return_num FROM salesreturn_13151 ORDER BY return_num DESC LIMIT 1");
       $row4 = mysqli_fetch_array($result4);
 
 ?>
 
 
 <div class="container">
-<h1 align="center">SALES ORDER</h1>  
+<h1 align="center">SALES RETURN</h1>  
 
 <!-- Customer information -->
   

@@ -52,14 +52,15 @@ $user = $_SESSION["user"];
             </div>
 
             <div class="form-group">
-                <label for="Geo_Cord" class="col-sm-2 control-label">Geo-Cord</label>
-                <input type="text" name="Geo_Cord"required/>
+                <label for="Country" class="col-sm-2 control-label">Country</label>
+                <input type="text" name="Country"required/>
             </div>
 
             <div class="form-group">
                 <label for="SP" class="col-sm-2 control-label">Sales Person</label>
                 <input type="text" name="SP" value="<?php 
                     if($issalesperson){echo $user[0];}
+                    else {echo 0;}
                   ?>"
                   />
             </div>

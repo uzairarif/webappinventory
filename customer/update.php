@@ -9,11 +9,11 @@
   	$ncustomernum = $_POST['ncustomer_num'];
   	$naddress = $_POST['naddress'];
   	$narea = $_POST['narea'];
-  	$nGeocord = $_POST['nGeo_Cord'];
+  	$ncountry = $_POST['ncountry'];
 	
 
 
-	$sql = "UPDATE customer_13151 SET Shop_Name = '$nshopname', Customer_Name = '$ncustomername', Customer_Number = '$ncustomernum' , Address = '$naddress', Area = '$narea', Geo_Cord = '$nGeocord' WHERE CID = '$CID'";
+	$sql = "UPDATE customer_13151 SET Shop_Name = '$nshopname', Customer_Name = '$ncustomername', Customer_Number = '$ncustomernum' , Address = '$naddress', Area = '$narea', Country = '$ncountry' WHERE CID = '$CID'";
  
 	if(mysqli_query($con,$sql)) {
         echo "<script>";

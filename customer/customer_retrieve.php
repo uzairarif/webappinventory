@@ -65,8 +65,8 @@ $user = $_SESSION["user"];
             </div>
 
             <div class="form-group">
-                <label for="Geo_Cord" class="col-sm-2 control-label">Geo-Cord</label>
-                <input type="text" name="nGeo_Cord" value="<?php echo $row[6]; ?>" />
+                <label for="Geo_Cord" class="col-sm-2 control-label">Country</label>
+                <input type="text" name="ncountry" value="<?php echo $row[6]; ?>" />
             </div>
 
            
