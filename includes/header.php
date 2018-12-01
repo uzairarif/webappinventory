@@ -2,7 +2,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid style="position: fixed; top: 0px;">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/db-13151/welcome.php">RPaints</a>
+<!--       <a class="navbar-brand" href="/db-13151/welcome.php">RPaints</a> -->
     </div>
         <ul class="nav navbar-nav fixed-top">
           <?php 
